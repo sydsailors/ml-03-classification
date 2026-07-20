@@ -49,6 +49,11 @@ Changes made for Phase 5 included:
 - Updating the workflow to fit the new features.
 - Make the target labels readable by converting them into names.
 
+<img width="560" height="454" alt="image" src="https://github.com/user-attachments/assets/49accbd9-5216-4338-a9f1-e7cd244b3c6a" />
+
+<img width="560" height="454" alt="image" src="https://github.com/user-attachments/assets/411b02f6-c4e9-40ae-9bf9-da670910260e" />
+
+
 ### Basis and Data
 
 The example project in `notebooks/ml_03_case.ipynb` had an intended target
