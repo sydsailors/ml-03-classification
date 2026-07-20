@@ -457,3 +457,212 @@ dtype: float64
 2026-07-19 21:18:54 | INFO | M03 |   Decision Tree (max_depth=3)
 2026-07-19 21:18:54 | INFO | M03 |   Random Forest (100 trees)
 2026-07-19 21:18:54 | INFO | M03 | ========================
+2026-07-19 21:41:07 | INFO | M03 | === RUN START ===
+2026-07-19 21:41:07 | INFO | M03 | project=M03
+2026-07-19 21:41:07 | INFO | M03 | repo_dir=ml-03-classification
+2026-07-19 21:41:07 | INFO | M03 | python=3.14.5
+2026-07-19 21:41:07 | INFO | M03 | os=Darwin 20.6.0
+2026-07-19 21:41:07 | INFO | M03 | shell=zsh
+2026-07-19 21:41:07 | INFO | M03 | cwd=notebooks
+2026-07-19 21:41:07 | INFO | M03 | github_actions=False
+2026-07-19 21:41:07 | INFO | M03 | Confirming installation:
+2026-07-19 21:41:07 | INFO | M03 |   python:       3.14.5
+2026-07-19 21:41:07 | INFO | M03 |   pandas:       3.0.3
+2026-07-19 21:41:07 | INFO | M03 |   numpy:        2.5.1
+2026-07-19 21:41:07 | INFO | M03 |   scikit-learn: 1.9.0
+2026-07-19 21:41:07 | INFO | M03 |   seaborn:      0.13.2
+2026-07-19 21:41:07 | INFO | M03 |   matplotlib:   3.11.0
+2026-07-19 21:41:16 | INFO | M03 | Loading dataset: Breast Cancer Wisconsin
+2026-07-19 21:42:39 | INFO | M03 | Loading dataset: Breast Cancer Wisconsin
+2026-07-19 21:42:39 | INFO | M03 | Loaded: 569 rows, 31 columns
+2026-07-19 21:42:39 | INFO | M03 | Loading dataset: Breast Cancer Wisconsin
+2026-07-19 21:42:39 | INFO | M03 | Loaded: 569 rows, 31 columns
+2026-07-19 21:42:58 | INFO | M03 | Loading dataset: Breast Cancer Wisconsin
+2026-07-19 21:42:58 | INFO | M03 | Loaded: 569 rows, 31 columns
+2026-07-19 21:44:49 | INFO | M03 | Train instances: 455
+2026-07-19 21:44:49 | INFO | M03 | Test instances: 114
+2026-07-19 21:49:20 | INFO | M03 | Fitting DecisionTreeClassifier(max_depth=3)
+2026-07-19 21:50:45 | INFO | M03 | Decision Tree Accuracy: 0.895
+2026-07-19 21:50:45 | INFO | M03 | Random Forest Accuracy: 0.895
+2026-07-19 21:50:45 | INFO | M03 | Decision Tree Classification Report
+2026-07-19 21:50:45 | DEBUG | M03 | 
+              precision    recall  f1-score   support
+
+           0       0.81      0.93      0.87        42
+           1       0.95      0.88      0.91        72
+
+    accuracy                           0.89       114
+   macro avg       0.88      0.90      0.89       114
+weighted avg       0.90      0.89      0.90       114
+
+2026-07-19 21:50:45 | INFO | M03 | Random Forest Classification Report
+2026-07-19 21:50:45 | DEBUG | M03 | 
+              precision    recall  f1-score   support
+
+           0       0.83      0.90      0.86        42
+           1       0.94      0.89      0.91        72
+
+    accuracy                           0.89       114
+   macro avg       0.88      0.90      0.89       114
+weighted avg       0.90      0.89      0.90       114
+
+2026-07-19 21:50:45 | INFO | M03 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-07-19 21:51:05 | INFO | M03 | Feature importance:
+2026-07-19 21:51:05 | INFO | M03 | 
+mean radius       0.000000
+mean perimeter    0.072068
+mean texture      0.119678
+mean area         0.808253
+dtype: float64
+2026-07-19 21:52:48 | DEBUG | M03 |   depth= 1  train=0.895  test=0.895
+2026-07-19 21:52:48 | DEBUG | M03 |   depth= 2  train=0.901  test=0.895
+2026-07-19 21:52:48 | DEBUG | M03 |   depth= 3  train=0.919  test=0.895
+2026-07-19 21:52:48 | DEBUG | M03 |   depth= 4  train=0.936  test=0.886
+2026-07-19 21:52:48 | DEBUG | M03 |   depth= 5  train=0.949  test=0.886
+2026-07-19 21:52:49 | DEBUG | M03 |   depth= 6  train=0.954  test=0.904
+2026-07-19 21:52:49 | DEBUG | M03 |   depth= 7  train=0.974  test=0.877
+2026-07-19 21:52:49 | DEBUG | M03 |   depth= 8  train=0.982  test=0.904
+2026-07-19 21:52:49 | DEBUG | M03 |   depth= 9  train=0.987  test=0.895
+2026-07-19 21:52:49 | DEBUG | M03 |   depth=10  train=0.996  test=0.886
+2026-07-19 21:52:49 | DEBUG | M03 |   depth=11  train=0.996  test=0.886
+2026-07-19 21:52:49 | DEBUG | M03 |   depth=12  train=0.998  test=0.886
+2026-07-19 21:53:58 | INFO | M03 | Fitting DecisionTreeClassifier(max_depth=3)
+2026-07-19 21:54:49 | INFO | M03 | Train instances: 455
+2026-07-19 21:54:49 | INFO | M03 | Test instances: 114
+2026-07-19 21:55:05 | INFO | M03 | Fitting DecisionTreeClassifier(max_depth=3)
+2026-07-19 21:56:39 | INFO | M03 | === RUN START ===
+2026-07-19 21:56:39 | INFO | M03 | project=M03
+2026-07-19 21:56:39 | INFO | M03 | repo_dir=ml-03-classification
+2026-07-19 21:56:39 | INFO | M03 | python=3.14.5
+2026-07-19 21:56:39 | INFO | M03 | os=Darwin 20.6.0
+2026-07-19 21:56:39 | INFO | M03 | shell=zsh
+2026-07-19 21:56:39 | INFO | M03 | cwd=notebooks
+2026-07-19 21:56:39 | INFO | M03 | github_actions=False
+2026-07-19 21:56:39 | INFO | M03 | Confirming installation:
+2026-07-19 21:56:39 | INFO | M03 |   python:       3.14.5
+2026-07-19 21:56:39 | INFO | M03 |   pandas:       3.0.3
+2026-07-19 21:56:39 | INFO | M03 |   numpy:        2.5.1
+2026-07-19 21:56:39 | INFO | M03 |   scikit-learn: 1.9.0
+2026-07-19 21:56:39 | INFO | M03 |   seaborn:      0.13.2
+2026-07-19 21:56:39 | INFO | M03 |   matplotlib:   3.11.0
+2026-07-19 21:56:43 | INFO | M03 | Loading dataset: Breast Cancer Wisconsin
+2026-07-19 21:56:43 | INFO | M03 | Loaded: 569 rows, 31 columns
+2026-07-19 21:56:47 | INFO | M03 | Train instances: 455
+2026-07-19 21:56:47 | INFO | M03 | Test instances: 114
+2026-07-19 21:56:51 | INFO | M03 | Fitting DecisionTreeClassifier(max_depth=3)
+2026-07-19 21:57:04 | INFO | M03 | Decision Tree Accuracy: 0.912
+2026-07-19 21:57:04 | INFO | M03 | Random Forest Accuracy: 0.886
+2026-07-19 21:57:04 | INFO | M03 | Decision Tree Classification Report
+2026-07-19 21:57:05 | DEBUG | M03 | 
+              precision    recall  f1-score   support
+
+      Benign       0.93      0.93      0.93        72
+   Malignant       0.88      0.88      0.88        42
+
+    accuracy                           0.91       114
+   macro avg       0.91      0.91      0.91       114
+weighted avg       0.91      0.91      0.91       114
+
+2026-07-19 21:57:05 | INFO | M03 | Random Forest Classification Report
+2026-07-19 21:57:05 | DEBUG | M03 | 
+              precision    recall  f1-score   support
+
+      Benign       0.87      0.96      0.91        72
+   Malignant       0.91      0.76      0.83        42
+
+    accuracy                           0.89       114
+   macro avg       0.89      0.86      0.87       114
+weighted avg       0.89      0.89      0.88       114
+
+2026-07-19 21:57:05 | INFO | M03 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-07-19 21:57:26 | INFO | M03 | Feature importance:
+2026-07-19 21:57:26 | INFO | M03 | 
+mean radius       0.000000
+mean perimeter    0.059549
+mean texture      0.105118
+mean area         0.835333
+dtype: float64
+2026-07-19 21:59:07 | INFO | M03 | ========================
+2026-07-19 21:59:07 | INFO | M03 | SUMMARY
+2026-07-19 21:59:07 | INFO | M03 | ========================
+2026-07-19 21:59:07 | INFO | M03 | Dataset:   Breast Cancer Wisconsin
+2026-07-19 21:59:07 | INFO | M03 | Target:    Tumor Diagnosis (Benign vs. Malignant)
+2026-07-19 21:59:07 | INFO | M03 | Features:  ['mean radius', 'mean texture', 'mean perimeter', 'mean area']
+2026-07-19 21:59:07 | INFO | M03 | Models Compared:
+2026-07-19 21:59:07 | INFO | M03 |   Decision Tree (max_depth=3)
+2026-07-19 21:59:07 | INFO | M03 |   Random Forest (100 trees)
+2026-07-19 21:59:07 | INFO | M03 | ========================
+2026-07-19 22:15:42 | INFO | M03 | === RUN START ===
+2026-07-19 22:15:42 | INFO | M03 | project=M03
+2026-07-19 22:15:42 | INFO | M03 | repo_dir=ml-03-classification
+2026-07-19 22:15:42 | INFO | M03 | python=3.14.5
+2026-07-19 22:15:42 | INFO | M03 | os=Darwin 20.6.0
+2026-07-19 22:15:42 | INFO | M03 | shell=zsh
+2026-07-19 22:15:42 | INFO | M03 | cwd=notebooks
+2026-07-19 22:15:42 | INFO | M03 | github_actions=False
+2026-07-19 22:15:42 | INFO | M03 | Confirming installation:
+2026-07-19 22:15:42 | INFO | M03 |   python:       3.14.5
+2026-07-19 22:15:42 | INFO | M03 |   pandas:       3.0.3
+2026-07-19 22:15:42 | INFO | M03 |   numpy:        2.5.1
+2026-07-19 22:15:42 | INFO | M03 |   scikit-learn: 1.9.0
+2026-07-19 22:15:42 | INFO | M03 |   seaborn:      0.13.2
+2026-07-19 22:15:42 | INFO | M03 |   matplotlib:   3.11.0
+2026-07-19 22:15:43 | INFO | M03 | Loading dataset: Breast Cancer Wisconsin
+2026-07-19 22:15:43 | INFO | M03 | Loaded: 569 rows, 31 columns
+2026-07-19 22:15:43 | INFO | M03 | Train instances: 455
+2026-07-19 22:15:43 | INFO | M03 | Test instances: 114
+2026-07-19 22:15:43 | INFO | M03 | Fitting DecisionTreeClassifier(max_depth=3)
+2026-07-19 22:15:43 | INFO | M03 | Decision Tree Accuracy: 0.912
+2026-07-19 22:15:43 | INFO | M03 | Random Forest Accuracy: 0.886
+2026-07-19 22:15:43 | INFO | M03 | Decision Tree Classification Report
+2026-07-19 22:15:43 | DEBUG | M03 | 
+              precision    recall  f1-score   support
+
+      Benign       0.93      0.93      0.93        72
+   Malignant       0.88      0.88      0.88        42
+
+    accuracy                           0.91       114
+   macro avg       0.91      0.91      0.91       114
+weighted avg       0.91      0.91      0.91       114
+
+2026-07-19 22:15:43 | INFO | M03 | Random Forest Classification Report
+2026-07-19 22:15:43 | DEBUG | M03 | 
+              precision    recall  f1-score   support
+
+      Benign       0.87      0.96      0.91        72
+   Malignant       0.91      0.76      0.83        42
+
+    accuracy                           0.89       114
+   macro avg       0.89      0.86      0.87       114
+weighted avg       0.89      0.89      0.88       114
+
+2026-07-19 22:15:43 | INFO | M03 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-07-19 22:15:44 | INFO | M03 | Feature importance:
+2026-07-19 22:15:44 | INFO | M03 | 
+mean radius       0.000000
+mean perimeter    0.059549
+mean texture      0.105118
+mean area         0.835333
+dtype: float64
+2026-07-19 22:15:44 | DEBUG | M03 |   depth= 1  train=0.899  test=0.877
+2026-07-19 22:15:44 | DEBUG | M03 |   depth= 2  train=0.905  test=0.868
+2026-07-19 22:15:44 | DEBUG | M03 |   depth= 3  train=0.912  test=0.912
+2026-07-19 22:15:44 | DEBUG | M03 |   depth= 4  train=0.930  test=0.895
+2026-07-19 22:15:44 | DEBUG | M03 |   depth= 5  train=0.947  test=0.860
+2026-07-19 22:15:44 | DEBUG | M03 |   depth= 6  train=0.958  test=0.886
+2026-07-19 22:15:44 | DEBUG | M03 |   depth= 7  train=0.976  test=0.877
+2026-07-19 22:15:44 | DEBUG | M03 |   depth= 8  train=0.982  test=0.868
+2026-07-19 22:15:44 | DEBUG | M03 |   depth= 9  train=0.991  test=0.860
+2026-07-19 22:15:44 | DEBUG | M03 |   depth=10  train=0.993  test=0.842
+2026-07-19 22:15:44 | DEBUG | M03 |   depth=11  train=0.998  test=0.842
+2026-07-19 22:15:44 | DEBUG | M03 |   depth=12  train=1.000  test=0.842
+2026-07-19 22:15:45 | INFO | M03 | ========================
+2026-07-19 22:15:45 | INFO | M03 | SUMMARY
+2026-07-19 22:15:45 | INFO | M03 | ========================
+2026-07-19 22:15:45 | INFO | M03 | Dataset:   Breast Cancer Wisconsin
+2026-07-19 22:15:45 | INFO | M03 | Target:    Tumor Diagnosis (Benign vs. Malignant)
+2026-07-19 22:15:45 | INFO | M03 | Features:  ['mean radius', 'mean texture', 'mean perimeter', 'mean area']
+2026-07-19 22:15:45 | INFO | M03 | Models Compared:
+2026-07-19 22:15:45 | INFO | M03 |   Decision Tree (max_depth=3)
+2026-07-19 22:15:45 | INFO | M03 |   Random Forest (100 trees)
+2026-07-19 22:15:45 | INFO | M03 | ========================

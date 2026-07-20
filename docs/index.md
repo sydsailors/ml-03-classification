@@ -21,85 +21,94 @@ to get the example projects running on your machine.
 
 ## Phase 4. Technical Modification
 
-Describe your small technical modification to the example project.
+Changes made for Phase 4 included:
 
-Include:
+- Copying `ml_03_case.ipynb` and renaming it `ml_03_sailorsp4.ipynb`.
+- Adding a Random Forest classifier to Section 4.
+- Update Section 5 to include the added Random Forest classifier.
+- Adding a feature importance analysis and visualizations after Section 5.
 
-- What you changed
-- Why you chose that change
-- How you verified that it worked
-- What result, output, chart, metric, or behavior confirmed the change
+Once these changes were made, I hit `Run All` to checked to make sure
+each section ran successfully. The Random Forest classifier was successfully
+added and the heat maps and bar chart were created.
 
-Compared with the example project,
-explain what is different and why the change matters.
+These changes allowed me to compare two different machine learning algorithms
+and better interpret how the model makes its predictions.
 
-Was it easy, or surprisingly challenging and why do you think so?
+This modification was somewhat challenging, but not difficult. Adding
+the Random Forest classifier and the importance analysis took time and
+effort to make sure these additions ran successfully.
 
 ## Phase 5. Custom Project
 
-Describe your custom project and how you made your modeling decisions.
+Changes made for Phase 5 included:
 
-Be specific about what changed from the example project.
+- Copying `ml_03_sailorsp4.ipynb` and renaming it `ml_03_sailorsp5.ipynb`.
+- Replacing the original Penguins dataset with the Breast Cancer Wisconsin dataset.
+- Changing the target variable to diagnosis (malignant or benign).
+- Updating the workflow to fit the new features.
+- Make the target labels readable by converting them into names.
 
 ### Basis and Data
 
-Describe the dataset, input, or example you started with.
+The example project in `notebooks/ml_03_case.ipynb` had an intended target
+`body_mass_g` from the Seaborn Penguins dataset.
+I used the workflow and applied it to the Breast Cancer Wisconsin dataset.
+I chose this dataset because it represents a meaningful healthcare classification
+problem that is well suited for a regression model.
 
-Include:
-
-- The original example dataset or input
-- The data source
-- Why you chose it, kept it, or changed it
-- Any important limitations or assumptions
+One limitation of the dataset is that the model is trained on historical data
+and might not represent every patient population.
 
 ### Modeling Approach
 
-Describe the problem type and modeling approach for this project.
-
-Include:
-
-- Is this supervised or unsupervised and how do you know
-- Is this classification, regression, clustering, recommendation, forecasting, or another type of ML task
-- What kind of target works well for this approach
-- Why your selected model or method is appropriate
+This project is a supervised machine learning regression problem because the dataset
+contains labeled examples with known diagnosis outcomes. The goal is to predict whether
+a tumor is benign or malignant. Since the target consists of two categories, a
+classification model would be appropriate.
 
 ### Target
 
-Describe the example target variable.
+The example target variable, `body_mass_g`, represents the weight of the penguin.
+The target variable, benign or malignant, represents the diagnosis of a tumor.
 
-Then describe your chosen target variable.
+The project remained a supervised regression model.
 
-Explain how your target choice changes the modeling approach, interpretation, or evaluation.
+The evaluation approach went from predicting a numeric value to measuring
+classification performance using metrics such as accuracy, precision, recall,
+F1-score, and a confusion matrix.
 
 ### Features
 
-Describe the example features.
+The original example features were replaced with tumor measurement
+features from the dataset.
 
-Then describe the features you used to predict your target.
+Features included:
+- radius
+- texture
+- perimeter
+- area
 
-Explain what you changed, added, removed, or kept and why.
+These features were selected because they describe characteristics of the tumor
+that may help predict the diagnosis.
 
 ### Evaluation and Results
 
-Describe how you evaluated your model.
+The model was evaluated using accuracy, precision, recall, F1-score, and confusion
+matrices. I compared a Decision Tree model with a Random Forest model to
+determine which approach was better at making a prediction. The Decision Tree
+model achieved a higher accuracy of 91% compared to the Random Forest model's
+accuracy of 89%.
 
-Include:
-
-- The metric or evidence you used
-- The main result
-- Whether the result was useful, interesting, surprising, or disappointing
-- Any weakness, limitation, or next improvement
+The Decision Tree achieved a recall of 88% for malignant tumors, meaning it correctly
+identified most cancer cases. The confusion matrix was an important addition because
+false negatives are a critical error in the healthcare field.
 
 ### Summary
 
-Summarize your custom project.
+I implemented a supervised classification model using the Breast Cancer Wisconsin dataset.
+The Decision Tree model provided the strongest results with 91.2% accuracy. This project
+helped demonstrate how feature selection, mdoel complexity, and evaluation metrics
+influence machine learning performance.
 
-Include:
-
-- How you implemented your custom model
-- What results you got
-- What you learned
-- How well you exercised the skills covered in this project
-- What kinds of real problems you could apply these skills to in the future
-
-Display at least one image or screenshot showing your work.
+These skills could be applied to future healthcare analytics problems for diagnosis prediction, risk assessment, and clinical decision support.
