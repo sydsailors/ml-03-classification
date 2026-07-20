@@ -108,7 +108,7 @@ false negatives are a critical error in the healthcare field.
 
 I implemented a supervised classification model using the Breast Cancer Wisconsin dataset.
 The Decision Tree model provided the strongest results with 91.2% accuracy. This project
-helped demonstrate how feature selection, mdoel complexity, and evaluation metrics
+helped demonstrate how feature selection, model complexity, and evaluation metrics
 influence machine learning performance.
 
 These skills could be applied to future healthcare analytics problems for diagnosis prediction, risk assessment, and clinical decision support.
